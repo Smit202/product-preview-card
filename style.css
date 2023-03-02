@@ -1,0 +1,164 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+@import url(https://fonts.google.com/specimen/Fraunces);
+
+* {
+    background-color: hsl(30, 38%, 92%);
+    box-sizing: border-box;
+}
+
+.container {
+    border-radius: 12px;
+    background-color: white;
+    width: 600px;
+    height: 420px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+}
+
+.product-img {
+    border-radius: 12px 0 0 12px;
+    background-image: url('./images/image-product-desktop.jpg');
+    background-origin: border-box;
+    background-size: cover;
+    display: inline;
+    float: left;
+    width: 300px;
+    height: 420px;
+}
+
+.prd-details {
+    border-radius: 0 12px 12px 0;
+    float: left;
+    width: 300px;
+    height: 420px;
+    background-color: white;
+    padding: 30px;
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    word-wrap: break-word;
+}
+
+p.content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    word-spacing: 2px;
+    font-weight: 550;
+}
+
+h1.content {
+    font-family: 'Fraunces', serif;
+}
+
+span.content {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 240px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 800;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+svg {
+    background-color: hsl(158, 36%, 37%);
+}
+
+button:hover {
+    background-color: hsl(158, 92%, 15%);
+}
+
+@media only screen and (max-width: 375px) {
+    
+    .container {
+        width: 92%;
+        height: 660px;
+    }
+
+    .product-img {
+        display: block;
+        float: none;
+        background-image: url('./images/image-product-mobile.jpg');
+        width: 100%;
+        height: 40%;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .prd-details {
+        border-radius: 0 0 12px 12px;
+        float: none;
+        width: 100%;
+        height: 60%;
+        background-color: white;
+        padding: 30px 25px;
+    }
+
+    p.content, span.content {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 650px) {
+    .container {
+        width: 345px;
+        height: 660px;
+    }
+
+    .product-img {
+        display: block;
+        float: none;
+        background-image: url('./images/image-product-mobile.jpg');
+        width: auto;
+        height: 45%;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .prd-details {
+        border-radius: 0 0 12px 12px;
+        float: none;
+        width: 100%;
+        height: 60%;
+        background-color: white;
+        padding: 30px 25px;
+    }
+
+    p.content {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
